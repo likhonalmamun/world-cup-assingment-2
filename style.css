@@ -27,6 +27,7 @@ main {
   border-radius: 30px;
   margin-top: 60px;
   justify-content: space-around;
+  overflow: hidden;
 }
 
 .left {
@@ -76,14 +77,26 @@ main {
 }
 
 .right {
-  margin: 0 2vw;
+  margin: 0 zvw;
   width: 55%;
   align-self: flex-end;
 }
+@keyframes player {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.15);
+  }
+}
+.right img:hover {
+  animation: player 1s ease-in-out infinite alternate;
+}
 .right img {
-  width: 100%;
   position: relative;
+  width: 100%;
   top: 7px;
+ 
 }
 
 /*--------------------------------------------------------------------------------------------------
@@ -206,17 +219,21 @@ footer p a {
 /*------------------------------------------------------------------------------------------------------
 ----------------------------------------------upcoming match styles------------------------------------------- */
 .upcoming {
+  padding: 35px 65px;
   border-radius: 20px;
   align-items: center;
   justify-content: space-between;
 }
-
+.upcoming img {
+  width: 45%;
+}
 .match-name {
-  font-size: 23px;
+  font-size: 20px;
 }
 .match-detail {
   color: gray;
   font-weight: 300;
+  font-size: 15px;
 }
 
 /*------------------------------------------------------------------------------------------------------
@@ -284,6 +301,12 @@ footer p a {
   }
   .b-right {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .match-name {
+    font-size: 19px;
+  }
+  .match-detail {
+    font-size: 13px;
   }
 }
 
@@ -355,9 +378,6 @@ footer p a {
     width: 80%;
     align-self: normal;
   }
-  .right img {
-    width: 100%;
-  }
 
   .b-right {
     width: 100%;
@@ -368,9 +388,9 @@ footer p a {
   }
   .b-left {
     flex-direction: column;
-    /* width: 90%; */
     background-color: #fff;
     justify-content: center;
+    padding: 0ch;
   }
   .b-left a {
     border: 2px solid rgba(128, 128, 128, 0.193);
@@ -378,10 +398,12 @@ footer p a {
     margin: 0px auto 20px;
     padding: 10px 10px;
     display: block;
+    width: 175px;
     font-size: 25px;
   }
-  .b-left .for-mobile {
-    width: 145px;
+  .up {
+    width: 75%;
+    padding: 10px 5px;
   }
   .view-all {
     display: none;
