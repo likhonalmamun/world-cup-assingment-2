@@ -240,6 +240,43 @@ footer p a {
 }
 
 /*------------------------------------------------------------------------------------------------------
+----------------------------------------------watch now styles------------------------------------------- */
+
+.watch-now {
+  background-color: rgb(13, 13, 13);
+  border-radius: 25px;
+  padding: 2% 20%;
+}
+.watch-now p,
+.watch-now h2 {
+  padding: 4%;
+  background-color: rgb(254, 254, 254);
+  border-radius: 12px;
+  margin: 5% 0;
+  font-size: 120%;
+  font-weight: 900;
+  color: rgb(5, 6, 6);
+  text-align: center;
+}
+.watch-now h2 {
+  color: #fff;
+  background-color: rgba(223, 37, 4, 0.447);
+}
+.watch-now a {
+  width: fit-content;
+  padding: 3% 5%;
+  border-radius: 12px;
+  margin: 5% auto;
+  font-size: 70%;
+  font-weight: 900;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  background-color: rgb(223, 37, 4);
+}
+
+/*------------------------------------------------------------------------------------------------------
 ----------------------------------------------media queries------------------------------------------- */
 
 /*------------------------------ extra large device------------------------------- */
@@ -288,7 +325,7 @@ footer p a {
 }
 
 /*---------------------------------- tablet device---------------------------- */
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 992px) {
   .view-all {
     display: block;
   }
@@ -300,6 +337,7 @@ footer p a {
     flex-direction: row;
     background-color: #fff;
     justify-content: space-between;
+    padding: 5px 10px;
   }
   .b-left a {
     border: 2px solid rgba(128, 128, 128, 0.437);
@@ -322,7 +360,7 @@ footer p a {
 }
 
 /*-------------------------------------- mini-tab device -------------------------- */
-@media only screen and (min-width: 600px) and (max-width: 769px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
   .left {
     padding: 5vw 3vw;
   }
@@ -355,7 +393,7 @@ footer p a {
 
 /*------------------------------ mobile device------------------------------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 576px) {
   .top-sec {
     margin-top: 30px;
     display: block;
@@ -409,11 +447,10 @@ footer p a {
     padding: 10px 10px;
     display: block;
     width: 175px;
-    font-size: 25px;
+    font-size: 20px;
   }
   .up {
-    width: 75%;
-    padding: 10px 5px;
+    transform: scale(1.2);
   }
   .view-all {
     display: none;
@@ -446,5 +483,9 @@ footer p a {
   .match-detail {
     font-size: 12px;
     margin: 0 5px;
+  }
+  .watch-now p,
+  .watch-now h2 {
+    font-size: 80%;
   }
 }
