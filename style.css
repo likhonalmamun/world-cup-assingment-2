@@ -96,7 +96,6 @@ main {
   position: relative;
   width: 100%;
   top: 7px;
- 
 }
 
 /*--------------------------------------------------------------------------------------------------
@@ -132,7 +131,6 @@ main {
 }
 /* b-rigt styles */
 .b-right {
-  justify-self: flex-end;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 25px;
@@ -193,7 +191,7 @@ footer h2 {
   margin: 0%;
 }
 footer div {
-  width: 75%;
+  width: 95%;
   justify-content: center;
   flex-wrap: wrap;
   border-top: 3px solid rgba(128, 128, 128, 0.502);
@@ -219,21 +217,26 @@ footer p a {
 /*------------------------------------------------------------------------------------------------------
 ----------------------------------------------upcoming match styles------------------------------------------- */
 .upcoming {
-  padding: 35px 65px;
+  padding: 25px 25px;
   border-radius: 20px;
   align-items: center;
   justify-content: space-between;
 }
+.upcoming p {
+  margin: 0;
+}
 .upcoming img {
-  width: 45%;
+  width: 40%;
 }
 .match-name {
-  font-size: 20px;
+  font-size: 18px;
+  margin: 0 10px;
 }
 .match-detail {
   color: gray;
   font-weight: 300;
-  font-size: 15px;
+  font-size: 13px;
+  margin: 0 10px;
 }
 
 /*------------------------------------------------------------------------------------------------------
@@ -279,6 +282,9 @@ footer p a {
     font-weight: 600;
     margin: 12px 12px;
   }
+  .upcoming {
+    padding: 35px 45px;
+  }
 }
 
 /*---------------------------------- tablet device---------------------------- */
@@ -303,10 +309,15 @@ footer p a {
     grid-template-columns: repeat(2, 1fr);
   }
   .match-name {
-    font-size: 19px;
+    font-size: 18px;
+    margin: 0 10px;
   }
   .match-detail {
-    font-size: 13px;
+    font-size: 12px;
+    margin: 0 10px;
+  }
+  .upcoming {
+    padding: 25px 25px;
   }
 }
 
@@ -381,7 +392,6 @@ footer p a {
 
   .b-right {
     width: 100%;
-    justify-self: normal;
     display: grid;
     grid-template-columns: auto;
     gap: 30px;
@@ -422,5 +432,19 @@ footer p a {
   }
   footer div li a {
     margin-bottom: 0%;
+  }
+  footer p a {
+    margin: 0 10px;
+  }
+  .upcoming {
+    padding: 15px 15px;
+  }
+  .match-name {
+    font-size: 17px;
+    margin: 0 5px;
+  }
+  .match-detail {
+    font-size: 12px;
+    margin: 0 5px;
   }
 }
